@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+      <act_window id="action_beer"
+		name="beer model"
+		res_model="beer.beer_report"
+		view_mode="tree,form"
+		/>
+
+    <menuitem id="beer_menu"
+              name="Top menu for beer"
+	      action="action_beer"
+	      />
+
+</odoo>

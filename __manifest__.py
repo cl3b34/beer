@@ -25,10 +25,12 @@
 
     # always loaded
     'data': [
+        'views/beer_menu.xml',
+        'views/beer_form.xml',
         # 'security/ir.model.access.csv',
-       # 'views/views.xml',
-        'views/product_inherited.xml',
-       # 'views/templates.xml',
+        # 'views/views.xml',
+        #       'views/product_inherited.xml',
+        # 'views/templates.xml',
     ],
     # only loaded in demonstration mode
    # 'demo': [
