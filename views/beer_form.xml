@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
   <data>
-  <record model="ir.ui.view" id="beer_form">
+    <record model="ir.ui.view" id="beer_form">
       <field name="name">Beer model form</field>
       <field name="model">beer.beer_report</field>
       <field name="arch" type="xml">
@@ -13,13 +13,17 @@
 		    string="calculate CL of alcohol" />
 	  </header>
 	  <sheet>
-	  <group>
-          <field name="alcohol_pct"/>
-          <field name="liters"/>
-          </group>
+	    <group name="group_top">
+	      <group name="group_left">
+		<field name="alcohol_pct"/>
+	      </group>
+	      <group name="group_right">
+		<field name="liters"/>
+	      </group>
+            </group>
 	  </sheet>
 	</form>
       </field>
-  </record>
+    </record>
   </data>
 </odoo>

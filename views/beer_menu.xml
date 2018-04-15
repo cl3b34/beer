@@ -7,7 +7,7 @@
 		/>
 
     <menuitem id="beer_menu"
-              name="Top menu for beer"
+              name="Beer"
 	      action="action_beer"
 	      />
 
