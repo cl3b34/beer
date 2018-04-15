@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="fin-beer-reports.list">
+      <field name="name">fin-beer-reports list</field>
+      <field name="model">fin-beer-reports.fin-beer-reports</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="fin-beer-reports.action_window">
+      <field name="name">fin-beer-reports window</field>
+      <field name="res_model">fin-beer-reports.fin-beer-reports</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="fin-beer-reports.action_server">
+      <field name="name">fin-beer-reports server</field>
+      <field name="model_id" ref="model_fin-beer-reports_fin-beer-reports"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="fin-beer-reports" id="fin-beer-reports.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="fin-beer-reports.menu_1" parent="fin-beer-reports.menu_root"/>
+    <menuitem name="Menu 2" id="fin-beer-reports.menu_2" parent="fin-beer-reports.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="fin-beer-reports.menu_1_list" parent="fin-beer-reports.menu_1"
+              action="fin-beer-reports.action_window"/>
+    <menuitem name="Server to list" id="fin-beer-reports" parent="fin-beer-reports.menu_2"
+              action="fin-beer-reports.action_server"/>
+    -->
+  </data>
+</odoo>

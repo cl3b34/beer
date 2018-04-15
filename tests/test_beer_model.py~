@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+from odoo.tests.common import TransactionCase
+
+class TestBeerModel(TransactionCase):
+    
+    def test_create(self):
+        "Create basic fields needed for reporting on beer sales"
+        BeerReport = self.env['beer.beer_report']
+        beer = BeerReport.create({'alcohol_pct':5.5F, 'liters':0.33F})
+        self.assertEqual(BeerReport.alcohol_pct, 5.5F)
+        self.assertEqual(liters, 5.5F)
+        
