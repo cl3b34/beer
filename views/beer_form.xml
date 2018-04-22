@@ -25,5 +25,28 @@
 	</form>
       </field>
     </record>
+    <record id="view_tree_beer_report" model="ir.ui.view">
+      <field name="name">Beer Report Tree</field>
+      <field name="model">beer.beer_report</field>
+      <field name="arch" type="xml">
+	<tree colors="decoration-muted:alcohol_pct==5.5">
+	  <field name="alcohol_pct"/>
+	  <field name="liters"/>
+	</tree>
+      </field>      
+    </record>
+     <record id="view_filter_beer_report" model="ir.ui.view">
+       <field name="name">Beer Report Filter</field>
+      <field name="model">beer.beer_report</field>
+      <field name="arch" type="xml">
+	<search>
+	  <field name="alcohol_pct"/>
+	  <filter string="Few Liters"
+		  domain="[('liters', '&lt;=', 5.50)]"/>
+	  <filter string="more Liters"
+		  domain="[('liters', '&gt;=', 5)]"/>
+	</search>
+      </field>      
+    </record>
   </data>
 </odoo>
