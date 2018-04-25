@@ -19,6 +19,7 @@
 	      </group>
 	      <group name="group_right">
 		<field name="liters"/>
+		<field name="alcohol_cl"/>
 	      </group>
             </group>
 	  </sheet>
@@ -32,6 +33,7 @@
 	<tree colors="decoration-muted:alcohol_pct==5.5">
 	  <field name="alcohol_pct"/>
 	  <field name="liters"/>
+ 	  <field name="alcohol_cl"/>
 	</tree>
       </field>      
     </record>
@@ -45,6 +47,7 @@
 		  domain="[('liters', '&lt;=', 5.50)]"/>
 	  <filter string="more Liters"
 		  domain="[('liters', '&gt;=', 5)]"/>
+	  <field name="alcohol_cl"/>
 	</search>
       </field>      
     </record>
