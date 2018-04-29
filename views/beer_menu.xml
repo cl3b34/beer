@@ -2,7 +2,7 @@
 <odoo>
       <act_window id="action_beer"
 		name="beer model"
-		res_model="beer.beer_report"
+		res_model="product.product"
 		view_mode="tree,form"
 		/>
 

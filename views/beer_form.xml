@@ -3,7 +3,7 @@
   <data>
     <record model="ir.ui.view" id="beer_form">
       <field name="name">Beer model form</field>
-      <field name="model">beer.beer_report</field>
+      <field name="model">product.product</field>
       <field name="arch" type="xml">
         <form string="beer model">
 	  <header>
@@ -28,7 +28,7 @@
     </record>
     <record id="view_tree_beer_report" model="ir.ui.view">
       <field name="name">Beer Report Tree</field>
-      <field name="model">beer.beer_report</field>
+      <field name="model">product.product</field>
       <field name="arch" type="xml">
 	<tree colors="decoration-muted:alcohol_pct==5.5">
 	  <field name="alcohol_pct"/>
@@ -39,7 +39,7 @@
     </record>
      <record id="view_filter_beer_report" model="ir.ui.view">
        <field name="name">Beer Report Filter</field>
-      <field name="model">beer.beer_report</field>
+      <field name="model">product.product</field>
       <field name="arch" type="xml">
 	<search>
 	  <field name="alcohol_pct"/>

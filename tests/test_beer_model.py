@@ -13,7 +13,9 @@ class TestBeerModel(TransactionCase):
     def test_create(self):
         "Create basic fields needed for reporting on beer sales"
         BeerReport = self.env['beer.beer_report']
-        beer = BeerReport.create({'alcohol_pct': 3,'liters': 0.33})
+        Product = self.env['product.template']
+        product = Product.create({'name':'test'})
+        beer = BeerReport.create({'alcohol_pct': 3,'liters': 0.33, 'product': product})
         self.assertEqual(beer.alcohol_pct, 3)
         self.assertEqual(beer.liters, 0.33)
         # Test alcohol CL
