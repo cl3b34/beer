@@ -3,29 +3,17 @@
   <data>
     <record model="ir.ui.view" id="beer_form">
       <field name="name">Beer model form</field>
-      <field name="model">product.product</field>
+      <field name="model">product.template</field>
+      <field name="inherit_id" ref="product.product_template_form_view"/> 
       <field name="arch" type="xml">
-        <form string="beer model">
-	  <header>
-	    <button name="do_calculate_liters" type="object"
-		    string="calculate L of alcohol" class="oe_highlight" />
-	    <button name="do_calculate_cl" type="object"
-		    string="calculate CL of alcohol" />
-	  </header>
-	  <sheet>
-	    <group name="group_top">
-	      <group name="group_left">
-		<field name="alcohol_pct"/>
-	      </group>
-	      <group name="group_right">
-		<field name="liters"/>
-		<field name="alcohol_cl"/>
-	      </group>
-            </group>
-	  </sheet>
-	</form>
+        <div name='standard_price_uom' position='after'>
+	  <field name='alcohol_pct' />
+	  <field name='liters' />
+	</div>
       </field>
     </record>
+
+    <!--
     <record id="view_tree_beer_report" model="ir.ui.view">
       <field name="name">Beer Report Tree</field>
       <field name="model">product.product</field>
@@ -50,6 +38,7 @@
 	  <field name="alcohol_cl"/>
 	</search>
       </field>      
-    </record>
+      </record>
+      -->
   </data>
 </odoo>
