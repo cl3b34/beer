@@ -2,11 +2,11 @@
 
 from odoo import models, fields, api
 
-class BeerReport(models.Model):
+class BeerProduct(models.Model):
     _inherit = 'product.template'
-   # _name = 'beer.beer_report'
+   # _name = 'beer.beer_product'
     alcohol_pct = fields.Float('Alcohol %', (3, 2))
-    liters = fields.Float('Liters', (3, 2))
+    liter = fields.Float('Liters', (3, 2))
     alcohol_cl = fields.Float(compute="_alcohol_cl",store=False)
     
 
@@ -15,6 +15,14 @@ class BeerReport(models.Model):
         for beerReport in self:
             self.alcohol_cl = float((self.liters * (self.alcohol_pct /100))*100)
 
+
+
+class BeerPartner(models.Model):
+	_inherit = 'res.partner'
+	excise_liable = fields.Boolean('Excise Liable', required=True, default=True)
+	excise_number = fields.char('Excise Number')
+	excise_warehouse = fields.char('Excise Warehouse Number')
+	
             
 #     name = fields.Char()
 #     value = fields.Integer()
