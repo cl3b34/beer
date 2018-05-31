@@ -27,6 +27,7 @@
     'data': [
         'views/beer_menu.xml',
         'views/beer_form.xml',
+        'views/beer_partner_form.xml',
      #   'security/ir.model.access.csv',
         # 'views/views.xml',
         #       'views/product_inherited.xml',
