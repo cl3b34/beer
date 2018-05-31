@@ -20,9 +20,9 @@ class BeerProduct(models.Model):
 class BeerPartner(models.Model):
 	_inherit = 'res.partner'
 	excise_liable = fields.Boolean('Excise Liable', required=True, default=True)
-	excise_number = fields.char('Excise Number')
-	excise_warehouse = fields.char('Excise Warehouse Number')
-	
+	excise_number = fields.Char('Excise Number')
+	excise_warehouse = fields.Char('Excise Warehouse Number')
+	alcohol_license = fields.Char('Alcohol license')
             
 #     name = fields.Char()
 #     value = fields.Integer()
