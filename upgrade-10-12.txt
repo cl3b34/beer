@@ -1,5 +1,5 @@
 ### Update the beer module to Odoo 12 ###
-
+# https://odoo-development.readthedocs.io/en/latest/migration/index.html
 
 # check what is needed.
 
