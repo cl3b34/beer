@@ -1,0 +1,26 @@
+### Update the beer module to Odoo 12 ###
+
+
+# check what is needed.
+
+# are the DB tables still the same?
+sudo /opt/bitnami/ctlscript.sh start postgresql
+
+psql -U postgres -d bitnami_odoo
+CrwkLgHcYwT0
+
+
+- Database tables seem to be all there, just need to add our fields
+- views
+
+
+
+
+
+
+
+
+
+
+
+
